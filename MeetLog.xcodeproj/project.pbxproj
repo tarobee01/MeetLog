@@ -7,13 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D97304E52B87243800EC7724 /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97304E42B87243800EC7724 /* UserDetailView.swift */; };
 		D9B858B02B85CD6500BE016B /* MeetLogApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B858AF2B85CD6500BE016B /* MeetLogApp.swift */; };
-		D9B858B22B85CD6500BE016B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B858B12B85CD6500BE016B /* ContentView.swift */; };
 		D9B858B42B85CD6600BE016B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9B858B32B85CD6600BE016B /* Assets.xcassets */; };
 		D9B858B72B85CD6600BE016B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9B858B62B85CD6600BE016B /* Preview Assets.xcassets */; };
 		D9B858C12B85CD6600BE016B /* MeetLogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B858C02B85CD6600BE016B /* MeetLogTests.swift */; };
 		D9B858CB2B85CD6600BE016B /* MeetLogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B858CA2B85CD6600BE016B /* MeetLogUITests.swift */; };
 		D9B858CD2B85CD6600BE016B /* MeetLogUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B858CC2B85CD6600BE016B /* MeetLogUITestsLaunchTests.swift */; };
+		D9B858DA2B85CE3300BE016B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B858D92B85CE3300BE016B /* User.swift */; };
+		D9B858DC2B85CFF600BE016B /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B858DB2B85CFF600BE016B /* UserListView.swift */; };
+		D9B858DE2B85D01600BE016B /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B858DD2B85D01600BE016B /* MainTabView.swift */; };
+		D9B858E22B85DD8500BE016B /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = D9B858E12B85DD8500BE016B /* CodeScanner */; };
+		D9B858E42B85DD9900BE016B /* MyProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B858E32B85DD9900BE016B /* MyProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D97304E42B87243800EC7724 /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
 		D9B858AC2B85CD6500BE016B /* MeetLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeetLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9B858AF2B85CD6500BE016B /* MeetLogApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetLogApp.swift; sourceTree = "<group>"; };
-		D9B858B12B85CD6500BE016B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D9B858B32B85CD6600BE016B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9B858B62B85CD6600BE016B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D9B858BC2B85CD6600BE016B /* MeetLogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeetLogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +49,10 @@
 		D9B858C62B85CD6600BE016B /* MeetLogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeetLogUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9B858CA2B85CD6600BE016B /* MeetLogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetLogUITests.swift; sourceTree = "<group>"; };
 		D9B858CC2B85CD6600BE016B /* MeetLogUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetLogUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D9B858D92B85CE3300BE016B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D9B858DB2B85CFF600BE016B /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
+		D9B858DD2B85D01600BE016B /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		D9B858E32B85DD9900BE016B /* MyProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9B858E22B85DD8500BE016B /* CodeScanner in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,7 +85,6 @@
 			isa = PBXGroup;
 			children = (
 				D9B858AE2B85CD6500BE016B /* MeetLog */,
-				D9B858BF2B85CD6600BE016B /* MeetLogTests */,
 				D9B858C92B85CD6600BE016B /* MeetLogUITests */,
 				D9B858AD2B85CD6500BE016B /* Products */,
 			);
@@ -95,9 +104,14 @@
 			isa = PBXGroup;
 			children = (
 				D9B858AF2B85CD6500BE016B /* MeetLogApp.swift */,
-				D9B858B12B85CD6500BE016B /* ContentView.swift */,
+				D9B858DD2B85D01600BE016B /* MainTabView.swift */,
+				D9B858DB2B85CFF600BE016B /* UserListView.swift */,
+				D97304E42B87243800EC7724 /* UserDetailView.swift */,
+				D9B858E32B85DD9900BE016B /* MyProfileView.swift */,
+				D9B858D92B85CE3300BE016B /* User.swift */,
 				D9B858B32B85CD6600BE016B /* Assets.xcassets */,
 				D9B858B52B85CD6600BE016B /* Preview Content */,
+				D9B858BF2B85CD6600BE016B /* MeetLogTests */,
 			);
 			path = MeetLog;
 			sourceTree = "<group>";
@@ -143,6 +157,9 @@
 			dependencies = (
 			);
 			name = MeetLog;
+			packageProductDependencies = (
+				D9B858E12B85DD8500BE016B /* CodeScanner */,
+			);
 			productName = MeetLog;
 			productReference = D9B858AC2B85CD6500BE016B /* MeetLog.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +232,9 @@
 				Base,
 			);
 			mainGroup = D9B858A32B85CD6500BE016B;
+			packageReferences = (
+				D9B858E02B85DD8500BE016B /* XCRemoteSwiftPackageReference "CodeScanner" */,
+			);
 			productRefGroup = D9B858AD2B85CD6500BE016B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,8 +277,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9B858B22B85CD6500BE016B /* ContentView.swift in Sources */,
+				D9B858E42B85DD9900BE016B /* MyProfileView.swift in Sources */,
+				D9B858DC2B85CFF600BE016B /* UserListView.swift in Sources */,
 				D9B858B02B85CD6500BE016B /* MeetLogApp.swift in Sources */,
+				D9B858DA2B85CE3300BE016B /* User.swift in Sources */,
+				D97304E52B87243800EC7724 /* UserDetailView.swift in Sources */,
+				D9B858DE2B85D01600BE016B /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -582,6 +606,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D9B858E02B85DD8500BE016B /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.3.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D9B858E12B85DD8500BE016B /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D9B858E02B85DD8500BE016B /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D9B858A42B85CD6500BE016B /* Project object */;
 }

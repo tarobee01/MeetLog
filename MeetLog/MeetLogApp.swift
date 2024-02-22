@@ -6,12 +6,23 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct MeetLogApp: App {
+    let modelContainer: ModelContainer
+    init() {
+        do {
+            modelContainer = try ModelContainer(for: User.self)
+        } catch {
+            fatalError("Could not initialize ModelContainer")
+        }
+    }
+        
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainTabView()
         }
+        .modelContainer(modelContainer)
     }
 }
