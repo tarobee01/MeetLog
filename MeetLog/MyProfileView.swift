@@ -15,7 +15,7 @@ struct MyProfileView: View {
     let filter = CIFilter.qrCodeGenerator()
     @AppStorage("name") private var name = "Anonymous"
     @AppStorage("emailAddress") private var emailAddress = "you@yoursite.com"
-    @AppStorage("phoneNumber") private var phoneNumber = "00-000-0000-0000"
+    @AppStorage("phoneNumber") private var phoneNumber = "000-0000-0000"
     @AppStorage("note") private var note = "this is note"
     @State private var qrCode = UIImage()
     

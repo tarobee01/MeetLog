@@ -21,6 +21,17 @@ struct UserListView: View {
         case none, contacted, nocontacted
     }
     
+    var title: String {
+        switch filter {
+        case .none:
+            return "AllUser"
+        case .contacted:
+            return "Contacted"
+        case .nocontacted:
+            return "NonContacted"
+        }
+    }
+    
     var body: some View {
         NavigationStack {
             List(users, selection: $selectedUsers) { user in
@@ -31,11 +42,21 @@ struct UserListView: View {
                     user.note = newUser.note
                     user.isContacted = newUser.isContacted
                 })) {
-                    VStack(alignment: .leading) {
+                    VStack(spacing: 8) {
                         Text(user.name)
+                            .font(.title)
+                            .fontWeight(.bold)
                         Text(user.emailAddress)
+                            .font(.subheadline)
+                            .foregroundColor(.gray)
                         Text(user.phoneNumber)
+                            .font(.subheadline)
+                            .foregroundColor(.gray)
                     }
+                    .padding(16)
+                    .background(Color.white)
+                    .cornerRadius(10)
+                    .shadow(radius: 5)
                 }
                 .swipeActions {
                     if user.isContacted {
@@ -52,9 +73,13 @@ struct UserListView: View {
                 }
                 .tag(user)
             }
-            .navigationTitle("UserList")
+            .listStyle(.plain)
+            .navigationTitle("\(title)")
             .sheet(isPresented: $isShowingScanner) {
                 CodeScannerView(codeTypes: [.qr], simulatedData: "Paul Hudson\npaul@hackingwithswift.com", completion: handleScan)
+            }
+            .onAppear {
+                selectedUsers.removeAll()
             }
             .toolbar {
                 ToolbarItem {
